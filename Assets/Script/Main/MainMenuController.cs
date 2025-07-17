@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MainMenuController : MonoBehaviour
 {
+    [SerializeField] private GameObject stagePanelPrefab;
+    [SerializeField] private RectTransform canvasTrans;
     public void OnClickStartButton()
     {
         //todo: 스테이지 목록UI 표시
         Debug.Log("스테이지 목록UI 표시");
+        var stagePanel= Instantiate(stagePanelPrefab, canvasTrans);
     }
 
     public void OnClickSettingsButton()

@@ -369,7 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3044899010936184829}
   m_Layer: 5
-  m_Name: Star
+  m_Name: Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,7 +424,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7307417376367869201}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -520,7 +520,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4455725558522865161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 489148889447849206}
+        m_TargetAssemblyTypeName: StageButtonController, Assembly-CSharp
+        m_MethodName: OnClickStageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489148889447849206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +545,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0685457631b9f224f8895628168e29a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starImages:
+  - {fileID: 3967710872896765421}
+  - {fileID: 3600704694247601127}
+  - {fileID: 2831110077969599209}
+  stars: {fileID: 6855726928122392129}
+  starSprites:
+  - {fileID: 21300000, guid: 19930b38077313c409034eef8a8ea20f, type: 2}
+  - {fileID: 21300000, guid: ef14082a9b43e9f4d9dfde4e17ba8574, type: 2}
+  stageText: {fileID: 8302190072796245806}
+  lockImg: {fileID: 1251963907465459047}
 --- !u!1 &8027864464930684216
 GameObject:
   m_ObjectHideFlags: 0
